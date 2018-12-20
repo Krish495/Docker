@@ -2,3 +2,4 @@ docker volume create my-vol
 docker volume ls
 docker volume inspect my-vol
 docker volume rm my-vol
+docker run -it -d -p 9001:80 --name=devtest --mount source=myvol2,target=/app mohri1219/centos6.7-ruby2.2.2-mysql5.6
