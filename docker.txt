@@ -7,3 +7,13 @@ docker login --username=yourhubusername
 docker commit <container ID> <new image name> 
 docker tag 07851109dbdb 7777v/myganesh:awesome
 docker push 7777v/myganesh:awesome
+curl -sSL https://get.docker.com/ | sh
+docker top <container ID> == to check the process on container ID
+docker stats
+docker container port < container ID >
+docker network ls
+docker network inspect
+docker network create --driver 
+docker network connect
+docker network disconnect 
+docker run -d -it -p 9000:80 --name=container_name --network network_name image_id
