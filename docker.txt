@@ -30,7 +30,10 @@ RUN echo “This is Ganesh Docker File” > /var/www/html/index.html
 
 EXPOSE 80
 
+ENTRYPOINT service httpd start && /bin/bash
+
 CMD /bin/bash
+
 
 ============================= 
 docker image build -t < require Image Name > .
