@@ -5,7 +5,7 @@ docker volume rm my-vol
 docker run -it -d -p 9001:80 --name=devtest --mount source=myvol2,target=/app mohri1219/centos6.7-ruby2.2.2-mysql5.6
 docker login --username=yourhubusername
 docker commit <container ID> <new image name> 
-docker tag 07851109dbdb 7777v/myganesh:awesome
+docker tag <image Id > 7777v/myganesh:awesome
 docker push 7777v/myganesh:awesome
 curl -sSL https://get.docker.com/ | sh
 docker top <container ID> == to check the process on container ID
