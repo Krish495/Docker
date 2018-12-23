@@ -18,3 +18,18 @@ docker network connect
 docker network disconnect 
 docker run -d -it -p 9000:80 --name=container_name --network network_name image_id
  docker history <image Id >
+==============================
+
+FROM mohri1219/centos6.7-ruby2.2.2-mysql5.6
+
+MAINTAINER  Yaddanapudi.ganesh@gmail.com
+
+RUN yum -y install httpd; yum clean all
+
+RUN echo “This is Ganesh Docker File” > /var/www/html/index.html
+
+EXPOSE 80
+
+CMD /bin/bash
+
+===============================
