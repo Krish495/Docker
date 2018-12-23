@@ -32,4 +32,5 @@ EXPOSE 80
 
 CMD /bin/bash
 
-===============================
+============================= 
+docker image build -t < require Image Name > .
