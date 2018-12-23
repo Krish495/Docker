@@ -17,3 +17,4 @@ docker network create --driver
 docker network connect
 docker network disconnect 
 docker run -d -it -p 9000:80 --name=container_name --network network_name image_id
+ docker history <image Id >
