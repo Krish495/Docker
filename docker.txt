@@ -37,3 +37,20 @@ CMD /bin/bash
 
 ============================= 
 docker image build -t < require Image Name > .
+
+=============================
+
+docker swarm : - 
+docker swarm init
+docker node ls
+docker service create
+docker service ls
+docker service ps < container ID>
+docker service update < container ID> --replicas 3
+docker service ls
+docker service ps < container ID>
+docker service update --help
+docker ps 
+docker stop < container ID>
+docker service ls
+docker service ps <container id>
